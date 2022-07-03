@@ -1,7 +1,10 @@
 {
-    "name": "web",
+    "name": "historie-book",
     "version": "0.0.0",
     "scripts": {
+        "story:dev": "histoire dev",
+        "story:build": "histoire build",
+        "story:preview": "histoire preview",
         "dev": "vite",
         "build": "run-p type-check build-only",
         "preview": "vite preview --port 4173",
@@ -15,8 +18,7 @@
     "dependencies": {
         "pinia": "^2.0.14",
         "vue": "^3.2.37",
-        "vue-router": "^4.0.16",
-        "tsconfig": "*"
+        "vue-router": "^4.0.16"
     },
     "devDependencies": {
         "@rushstack/eslint-patch": "^1.1.0",
@@ -31,6 +33,7 @@
         "eslint": "^8.5.0",
         "eslint-plugin-cypress": "^2.12.1",
         "eslint-plugin-vue": "^9.0.0",
+        "histoire": "^0.7.8",
         "jsdom": "^20.0.0",
         "npm-run-all": "^4.1.5",
         "prettier": "^2.5.1",
